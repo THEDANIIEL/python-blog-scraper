@@ -272,6 +272,6 @@ class BlogScraper:
         logging.info(f"Scraping completed. Scraped {len(self.scraped_urls)} posts")
 
 if __name__ == "__main__":
-    url = "https://www.jajiga.com/mag"
+    url = "https://www.example.com/blog"
     scraper = BlogScraper(url, output_folder="posts/jajiga", delay=2)
     scraper.scrape(max_posts=100, max_pages=10)
